@@ -410,6 +410,9 @@ filterBiasedEdges <- function(net, ematrix, threads=0, wa_th = 1e-3, mtt_th = 0.
 #'
 #' @export
 performBiasTests <- function(row) {
+
+  print(row)
+
   gene1 = row['Source']
   gene2 = row['Target']
   row['SourceWAnova'] = NA
